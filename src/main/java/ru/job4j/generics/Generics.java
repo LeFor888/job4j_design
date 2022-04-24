@@ -5,14 +5,15 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Generics {
+
     public static void main(String[] args) {
         Generics gen = new Generics();
         List<Animal> first = new ArrayList<>();
         List<Predator> second = new ArrayList<>();
         List<Tiger> third = new ArrayList<>();
         first.add(new Animal("Mammals"));
-        second.add(new Predator("Cats", "run"));
-        third.add(new Tiger("Fluffy", "run", 9));
+        second.add(new Predator("Cats"));
+        third.add(new Tiger("Fluffy"));
 
         gen.printObject(first);
         gen.printObject(second);
